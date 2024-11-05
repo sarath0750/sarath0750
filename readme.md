@@ -190,6 +190,7 @@ spec:
     targetPort: 9009
   selector:
     app: mimir
+<img width="8" alt="Screenshot 2024-11-05 at 12 22 50 PM" src="https://github.com/user-attachments/assets/b66beb4a-2498-487f-a9d1-781ab3fbde4c">
 
     
 
