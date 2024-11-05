@@ -369,8 +369,10 @@ Finally, configure Kubecost to scrape metrics from the OTel Collector:
 Verify the Integration
 * Check the logs of both the OTel Collector and Kubecost to ensure that metrics are being successfully collected and exported.
 * Access the Kubecost UI to confirm that you can see the data being ingested from Mimir through the OTel Collector.
+ 
+you will see something like this:
 
-
+<img width="8" alt="Screenshot 2024-11-05 at 12 22 50 PM" src="https://github.com/user-attachments/assets/bc6cbc38-ffc6-434b-a96b-4216c0beac3b">
 
   
 
