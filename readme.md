@@ -52,7 +52,7 @@ services, and other resources.
                          		Then open your browser and navigate to http://localhost:9090.
 
 
-
+![image](https://github.com/user-attachments/assets/2e299033-b71c-497b-b0ea-1e136725419f)
 
         The flow of data involving Kubecost, the OpenTelemetry (OTel) collector, and the Mimir endpoint.
 
