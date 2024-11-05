@@ -229,7 +229,11 @@ Check Pods:
 Check Services:
 
 “kubectl get svc -n mimir”
+ If the mimir is runnung successfully you will see something like this:
+ 
+<img width="419" alt="Screenshot 2024-11-05 at 1 00 12 PM" src="https://github.com/user-attachments/assets/be1b6955-e904-4ab8-809e-770dd0a95782">
 
+ 
 
  Configure Kubecost to Push Data to Mimir
 
@@ -255,10 +259,11 @@ env:
 Verify the Setup:
  
 Check Mimir Logs: Verify that Mimir is receiving data. You can check the logs with:
-  
+ 
 “kubectl logs -l app=mimir -n mimir”
+if the mimir is receiving data you will see something like this:
 
-
+ <img width="1197" alt="Screenshot 2024-11-05 at 1 02 42 PM" src="https://github.com/user-attachments/assets/1afc70d7-538a-41fd-8e45-e2aad0766ce0">
 
 
 Setup Otel Collector:
