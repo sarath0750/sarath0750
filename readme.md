@@ -45,6 +45,12 @@ services, and other resources.
  
                                  “kubectl get pods -n kubecost”
 
+                                 If the Installation is successful you can see pods running: 
+                                 
+<img width="615" alt="Screenshot 2024-11-05 at 12 55 07 PM" src="https://github.com/user-attachments/assets/b2d545b7-a66d-4727-bb5e-5bc9a7b025d8">
+
+                                 
+
   4: Access the Kubecost UI: After installation, you can access the Kubecost UI by port-forwarding:
 
                                  “kubectl port-forward --namespace kubecost service/kubecost-cost-analyzer 9090:80”
