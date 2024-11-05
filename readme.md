@@ -6,7 +6,7 @@ Documentation of Kubecost Implementation
     
    1 -Kubernetes cluster:
 
-                      	:	A running Kubernetes cluster (v1.18 or later is recommended). You can use any Kubernetes distribution, such as Minikube, GKE, EKS, AKS, etc.
+                      	  :	A running Kubernetes cluster (v1.18 or later is recommended). You can use any Kubernetes distribution, such as Minikube, GKE, EKS, AKS, etc.
 
 
   2- Kubectl:
@@ -22,15 +22,16 @@ services, and other resources.
 
     4-Metrics provider:
                 
-                         : Ensure that a metrics provider like Otel and Mimir is running in your cluster, as Kubecost requires metrics to function correctly.
+                          : Ensure that a metrics provider like Otel and Mimir is running in your cluster, 
+     as Kubecost requires metrics to function correctly.
 
 
 
-   Installation steps           
+    Installation steps           
 
   1: Create the kubecost namespace using:
                                                                          
-                                          “ kubectl create namespace kubecost”
+                                   “ kubectl create namespace kubecost”
 
 
   2: Apply the Kubecost Manifests:
@@ -38,7 +39,7 @@ services, and other resources.
                                          You can use the following command to apply the necessary manifests directly from the Kubecost GitHub repository. These manifests will create all the required resources:
 
                 
-                                       “kubectl apply -f https://github.com/kubecost/cost-analyzer/releases/latest/download/kubecost.yaml”
+                                 “kubectl apply -f https://github.com/kubecost/cost-analyzer/releases/latest/download/kubecost.yaml”
 
 
  3: Verify the installation: Check the status of the Kubecost pods to ensure they are running:
@@ -213,12 +214,12 @@ spec:
     
 Now that you have created the YAML file, you can apply it to your Kubernetes cluster. Make sure the mimir namespace exists first:
  
-“kubectl create namespace mimir”
+  “kubectl create namespace mimir”
 
 
 Then, apply the deployment and service:
 
-“ kubectl apply -f mimir-deployment.yaml”
+ “ kubectl apply -f mimir-deployment.yaml”
 
    
 
@@ -250,7 +251,7 @@ Check Services:
 
  Configure Kubecost to Push Data to Mimir
 
-    1: Modify Kubecost Configuration: Update your Kubecost configuration to send metrics to Mimir. You’ll need to set the MIMIR_ENDPOINT in your Kubecost deployment.
+1: Modify Kubecost Configuration: Update your Kubecost configuration to send metrics to Mimir. You’ll need to set the MIMIR_ENDPOINT in your Kubecost deployment.
 
 2:Add Environment Variables: Edit your Kubecost deployment: 
      
