@@ -49,6 +49,9 @@ services, and other resources.
                                  
 <img width="615" alt="Screenshot 2024-11-05 at 12 55 07 PM" src="https://github.com/user-attachments/assets/b2d545b7-a66d-4727-bb5e-5bc9a7b025d8">
 
+
+
+
                                  
 
   4: Access the Kubecost UI: After installation, you can access the Kubecost UI by port-forwarding:
@@ -61,6 +64,9 @@ services, and other resources.
                              
 
 ![image](https://github.com/user-attachments/assets/2e299033-b71c-497b-b0ea-1e136725419f)
+
+
+
 
         The flow of data involving Kubecost, the OpenTelemetry (OTel) collector, and the Mimir endpoint.
 
@@ -198,6 +204,8 @@ spec:
     app: mimir
 <img width="8" alt="Screenshot 2024-11-05 at 12 22 50 PM" src="https://github.com/user-attachments/assets/b66beb4a-2498-487f-a9d1-781ab3fbde4c">
 
+
+
     
 
      Apply the YAML File
@@ -230,8 +238,13 @@ Check Services:
 
 “kubectl get svc -n mimir”
  If the mimir is runnung successfully you will see something like this:
+
+ 
  
 <img width="419" alt="Screenshot 2024-11-05 at 1 00 12 PM" src="https://github.com/user-attachments/assets/be1b6955-e904-4ab8-809e-770dd0a95782">
+
+
+
 
  
 
@@ -263,7 +276,12 @@ Check Mimir Logs: Verify that Mimir is receiving data. You can check the logs wi
 “kubectl logs -l app=mimir -n mimir”
 if the mimir is receiving data you will see something like this:
 
+
+
  <img width="1197" alt="Screenshot 2024-11-05 at 1 02 42 PM" src="https://github.com/user-attachments/assets/1afc70d7-538a-41fd-8e45-e2aad0766ce0">
+
+
+ 
 
 
 Setup Otel Collector:
@@ -382,6 +400,8 @@ Verify the Integration
 * Access the Kubecost UI to confirm that you can see the data being ingested from Mimir through the OTel Collector.
  
 you will see something like this:
+
+
 
 
 <img width="823" alt="Screenshot 2024-11-05 at 12 31 26 PM" src="https://github.com/user-attachments/assets/6850274d-8838-4034-bb8b-474cefa2a040">
