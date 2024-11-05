@@ -372,6 +372,7 @@ Verify the Integration
  
 you will see something like this:
 
+
 <img width="8" alt="Screenshot 2024-11-05 at 12 22 50 PM" src="https://github.com/user-attachments/assets/bc6cbc38-ffc6-434b-a96b-4216c0beac3b">
 
   
