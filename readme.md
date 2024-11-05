@@ -49,8 +49,10 @@ services, and other resources.
 
                                  “kubectl port-forward --namespace kubecost service/kubecost-cost-analyzer 9090:80”
 
-                         		Then open your browser and navigate to http://localhost:9090.
-
+                         		Then open your browser and navigate to http://localhost:9090: 
+                           
+                            you will be able to see something like this: 
+                             
 
 ![image](https://github.com/user-attachments/assets/2e299033-b71c-497b-b0ea-1e136725419f)
 
