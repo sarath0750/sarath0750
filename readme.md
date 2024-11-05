@@ -22,7 +22,7 @@ services, and other resources.
 
     4-Metrics provider:
                 
-                         : Ensure that a metrics provider like Prometheus is running in your cluster, as Kubecost requires metrics to function correctly.
+                         : Ensure that a metrics provider like Otel and Mimir is running in your cluster, as Kubecost requires metrics to function correctly.
 
 
 
