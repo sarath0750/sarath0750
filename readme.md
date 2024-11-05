@@ -9,18 +9,19 @@ Documentation of Kubecost Implementation
                       	  :	A running Kubernetes cluster (v1.18 or later is recommended). You can use any Kubernetes distribution, such as Minikube, GKE, EKS, AKS, etc.
 
 
-  2- Kubectl:
+  2 -Kubectl:
 
 
-                          : The Kubernetes command-line tool must be installed and configured to interact with your cluster. You can check if it’s installed by running:
+                          : The Kubernetes command-line tool must be installed and configured to interact 
+    with your cluster. You can check if it’s installed by running:
                                       kubectl version --client
 
-    3- Permissions: 
+  3  -Permissions: 
 
 services, and other resources.                                  
 
 
-    4-Metrics provider:
+  4-Metrics provider:
                 
                           : Ensure that a metrics provider like Otel and Mimir is running in your cluster, 
      as Kubecost requires metrics to function correctly.
